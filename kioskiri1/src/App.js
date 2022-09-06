@@ -1,15 +1,18 @@
 import React from 'react';
-import Header from './Components/Header/Header';
+import NavBar from './Components/Header/nav/NavBar';
 import ItemList from './Components/Body/ItemListContainer';
 
-
 export const App = () => {
+
+const mensaje = 'BIENVENIDOS A KIOSKIRI'
+
   return (
     <>
-    <Header />
-    <ItemList/>
+    <NavBar />
+    <ItemList greeting={mensaje}/>
     </>
   )
+
 }
 
 export default App
