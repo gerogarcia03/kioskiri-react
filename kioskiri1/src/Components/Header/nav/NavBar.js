@@ -7,8 +7,9 @@ const NavBar = () => {
 
     return (
         <header>
-            <img className='logo' src={Logo} alt='logo'></img>
-
+            <a href=''>
+                <img className='logo' src={Logo} alt='logo'></img>
+            </a>
             <nav>
                 <li>
                     <a href=''> PRODUCTOS</a>
