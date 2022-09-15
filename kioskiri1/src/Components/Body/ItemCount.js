@@ -1,19 +1,57 @@
-import React from "react";
-import React, {useState} from "react";
+import React, { useState } from "react";
+import coca500 from '../../Assets/coca500.jpg';
+import cart from '../../Assets/carrito.jpg';
 
 
-const ItemCount = () => {
+const ItemCount = ({ inicial, stock, onAdd }) => {
 
-    const [stock, setStock] = useState();
+    
 
-    const addProd = () =>{
-        setStock(stock + 1)
+    const [count, setStock] = useState(inicial);
+
+    const addProd = () => {
+        setStock(count + 1)
     }
 
-    const restar = () =>{
-        setStock(stock - 1)
+    const restar = () => {
+        setStock(count - 1)
     }
+
+
+    return (
+        <>
+            <section>
+                <div className="prod">
+                    <img src={coca500}></img>
+                    <h2>Coca Cola 500ml</h2>
+                    <p>$180</p>
+                    <p>Stock Disponible: {stock}</p>
+                    <div className="add">
+                        <button disabled={stock<=0}  onClick={() => onAdd(count)}>
+                            <img className="cart" src={cart}></img>
+                        </button>
+                        <div>
+                            <button disabled = {count >= stock} onClick={addProd}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
+                            </button>
+
+
+                            <button disabled = {count <= 0} onClick={restar}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </button>
+                            <h2>{count}</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </>
+    )
 
 }
 
-export default Item
+export default ItemCount
