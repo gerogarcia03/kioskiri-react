@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 31px 31px 62px rgb(168, 144, 116),
+        -31px -31px 62px rgb(197, 177, 151);
+    width: 15rem;
+    height: 18rem;
+}
+
+.card img {
+    padding: 1rem;
+    width: 9rem;
+    height: 9rem;
+}
+
+.card p{
+    font-size: 1.4rem;
+}
+
+.card button {
+    background-color: transparent;
+    border: 0;
+}
+
+.card button:hover {
+    cursor: pointer;
+}
+
+.card .cart {
+    width: 2rem;
+    height: 2rem;
+}

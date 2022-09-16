@@ -3,7 +3,7 @@ import '../Body.css'
 import ItemCount from "../ItemCount";
 import { ItemList } from "../ItemList";
 import { fetch } from "../utils/fetch";
-import { stock } from "../../Assets/stock";
+import { stock } from "../utils/stock";
 import { useEffect } from "react";
 
 

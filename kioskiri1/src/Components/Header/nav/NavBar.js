@@ -1,14 +1,14 @@
 import React from 'react';
-import Logo from '../../../Assets/kioskiriLogo.jpg';
 import CartIcon from './CartWidget';
 import '../../Header/Header.css'
+
 
 const NavBar = () => {
 
     return (
         <header>
             <a href=''>
-                <img className='logo' src={Logo} alt='logo'></img>
+                <img className='logo' src={'../Assets/kioskiriLogo.jpg'} alt='logo'></img>
             </a>
             <nav>
                 <li>
