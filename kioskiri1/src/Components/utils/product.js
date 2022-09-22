@@ -1,0 +1,1 @@
+export const producto = { id: 0, name: "Frenos Shimano Xt M800", price: 80000, description: "Juego de frenos a disco Shimano XT M8000 con tecnologia ServoWave.", img: "Assets/shimanoxt.jpg" }

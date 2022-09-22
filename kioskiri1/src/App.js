@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './Components/Header/nav/NavBar';
 import ItemListContainer from './Components/ItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer';
 
 export const App = () => {
 
@@ -9,7 +10,8 @@ export const App = () => {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting={mensaje} />
+      {/* <ItemListContainer greeting={mensaje} /> */}
+      <ItemDetailContainer greeting={mensaje} />
     </>
   )
 

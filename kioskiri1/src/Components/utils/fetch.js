@@ -1,9 +1,9 @@
-export const fetch = (stock) => {
+export const fetch = (producto) => {
 
-    return new Promise ((resolve, reject) => {
+    return new Promise((resolve, reject) => {
 
         setTimeout(() => {
-            resolve(stock)
+            resolve(producto)
         }, 2000)
 
     })

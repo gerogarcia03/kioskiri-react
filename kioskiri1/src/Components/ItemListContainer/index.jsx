@@ -26,7 +26,7 @@ const ItemListContainer = ({ greeting }) => {
         <>
             <h1>{greeting}</h1>
             {/* <ItemCount inicial={0} stock={7} onAdd={onAdd} /> */}
-            <ItemList lista={lista}/>
+            <ItemList lista={lista} />
         </>
     )
 }
