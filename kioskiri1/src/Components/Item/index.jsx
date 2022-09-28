@@ -14,7 +14,7 @@ const Item = ({ producto }) => {
                         <img className="cart" src='../Assets/carrito.jpg' ></img>
                     </button>
                 </div>
-            </section>
+            </section> 
         </>
     )
 }

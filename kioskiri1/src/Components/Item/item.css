@@ -5,6 +5,7 @@
 
 .card {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -13,6 +14,11 @@
         -31px -31px 62px rgb(197, 177, 151);
     width: 15rem;
     height: 18rem;
+    margin: 0rem 2rem;
+}
+
+.card h2 {
+    text-align: center;
 }
 
 .card img {
@@ -22,6 +28,7 @@
 }
 
 .card p{
+    text-align: center;
     font-size: 1.4rem;
 }
 

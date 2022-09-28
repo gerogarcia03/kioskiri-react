@@ -1,0 +1,103 @@
+{
+    "productos": {
+        "bebidas": [
+            {
+                "ìd": 0,
+                "name": "Coca-Cola 500",
+                "price": "70",
+                "cantidad": "1",
+                "img": "../Assets/coca500.jpg"
+            },
+            {
+                "id": 1,
+                "name": "Pepsi 1lt",
+                "price": 120,
+                "cantidad": 1,
+                "img": "../Assets/pepsi1lt.jpg"
+            },
+            {
+                "id": 2,
+                "name": "6 Pack Coca-Cola",
+                "price": 450,
+                "cantidad": 1,
+                "img": "../Assets/6packcoca1lt.jpg"
+            },
+            {
+                "id": 3,
+                "name": "6 Pack Pepsi 1lt",
+                "price": 420,
+                "cantidad": 1,
+                "img": "../Assets/pepsi6pack.jpg"
+            }
+        ],
+        "galletitas": [
+            {
+                "id": 4,
+                "name": "Surtido Bagley",
+                "price": 50,
+                "cantidad": 1,
+                "img": "../Assets/surtidobagley.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Sonrisas",
+                "price": 70,
+                "cantidad": 1,
+                "img": "../Assets/sonrisas.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Melba",
+                "price": 40,
+                "cantidad": 1,
+                "img": "../Assets/melba.jpg"
+            }
+        ],
+        "golosinas": [
+            {
+                "id": 7,
+                "name": "Beldent Infinit WowMint 14",
+                "price": 80,
+                "cantidad": 1,
+                "img": "../Assets/beldent14.jpg"
+            },
+            {
+                "id": 8,
+                "name": "Beldent Infinit BlueBerry 14",
+                "price": 80,
+                "cantidad": 1,
+                "img": "../Assets/belden14blueberry.jpg"
+            },
+            {
+                "id": 9,
+                "name": "Spearmint",
+                "price": 170,
+                "cantidad": 1,
+                "img": "../Assets/spearmint.jpg"
+            }
+        ],
+        "snacks": [
+            {
+                "id": 10,
+                "name": "Tubo Lays Original 140g",
+                "price": 80,
+                "cantidad": 1,
+                "img": "../Assets/lays140.jpg"
+            },
+            {
+                "id": 11,
+                "name": "Lays Jamon Serrano 85g",
+                "price": 90,
+                "cantidad": 1,
+                "img": "../Assets/laysjamon.jpg"
+            },
+            {
+                "id": 12,
+                "name": "Palitos Salados 120g",
+                "price": 50,
+                "cantidad": 1,
+                "img": "../Assets/krachitos120.jpg"
+            }
+        ]
+    }
+}

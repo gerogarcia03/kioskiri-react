@@ -6,6 +6,10 @@ header{
     justify-content: space-between;
 }
 
+header h1 {
+    padding-left: 20rem;
+}
+
 header .logo{
     width: 14rem;
     margin: 1rem 2rem;
