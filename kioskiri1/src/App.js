@@ -18,9 +18,9 @@ export const App = () => {
         <NavBar greeting={mensaje} />
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
-          <Route path='/categoria/:CategoriaId' element={<Productos />} />
+          <Route path='/Categoria/:CategoriaId' element={<Productos />} />
+          <Route path='/Producto/:DetalleId' element ={<ItemDetailContainer/>} />
           <Route path='/Cart' />
-          <Route path='/Deatil' element ={<ItemDetailContainer/>} />
         </Routes>
       </BrowserRouter>
     </>

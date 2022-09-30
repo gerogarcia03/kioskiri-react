@@ -15,12 +15,12 @@ const NavBar = ({ greeting }) => {
             <nav>
                 <ul className='lista'>
                     <li>
-                        <Link to='/categoria/productos'> PRODUCTOS</Link>
+                        <Link to='/menu/productos'> PRODUCTOS</Link>
                         <ul className='dropdown'>
-                            <li><Link to='/categoria/Bebidas'>Bebidas</Link></li>
-                            <li><Link to='/categoria/Galletitas'>Galletitas</Link></li>
-                            <li><Link to='/categoria/Snacks'>Snacks</Link></li>
-                            <li><Link to='/categoria/Golosinas'>Golosinas</Link></li>
+                            <li><Link to='/Categoria/Bebidas'>Bebidas</Link></li>
+                            <li><Link to='/Categoria/Galletitas'>Galletitas</Link></li>
+                            <li><Link to='/Categoria/Snacks'>Snacks</Link></li>
+                            <li><Link to='/Categoria/Golosinas'>Golosinas</Link></li>
                         </ul>
                     </li>
                     <li>

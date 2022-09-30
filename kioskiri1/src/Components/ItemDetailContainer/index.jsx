@@ -1,24 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail";
 import { product } from "../utils/product";
-import { fetch } from "../utils/fetch";
+import { useParams } from "react-router-dom";
 
-const ItemDetailContainer = ({ greeting }) => {
+const ItemDetailContainer = () => {
 
     const [prod, setProd] = useState({});
-
+    
+    const { DetalleId } = useParams();
+    
     useEffect(() => {
-        fetch(product)
-            .then(res => setProd(res))
+        const fetch = new Promise(resolve => {
+
+            setTimeout(() => {
+                resolve(product)
+            }, 1000)
+    
+        });
+            fetch.then(res => setProd(res.filter(producto => producto.id === parseInt(DetalleId))));
     }, [])
 
     return (
         <>
-            <h1>{greeting}</h1>
-            <ItemDetail producto={prod} />
+            <ItemDetail prod={prod} />
         </>
     )
 
 }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

@@ -14,8 +14,6 @@ export const Productos = () => {
     const [listaProd, setLista] = useState([]);
 
     useEffect(() => {
-        
-
         const fetch = new Promise((resolve, reject) => {
 
             setTimeout(() => {

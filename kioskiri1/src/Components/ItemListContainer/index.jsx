@@ -11,7 +11,7 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
 
-    let { CategoriaId } = useParams();
+    const { CategoriaId } = useParams();
     console.log(CategoriaId);
 
     const onAdd = (cantidad) => {
@@ -27,8 +27,8 @@ const ItemListContainer = () => {
         <>
             <h1> NUESTRAS OFERTAS </h1>
             <section>
-            {/* <ItemCount inicial={0} stock={7} onAdd={onAdd} /> */}
-            <ItemList lista={lista} />
+                {/* <ItemCount inicial={0} stock={7} onAdd={onAdd} /> */}
+                <ItemList lista={lista} />
             </section>
         </>
     )

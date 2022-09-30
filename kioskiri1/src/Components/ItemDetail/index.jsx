@@ -1,17 +1,17 @@
 import React from "react";
-import './index.css'
+import './index.css';
+import {} from '../utils/product' 
 
-
-const ItemDetail = ({ producto }) => {
+const ItemDetail = ({ prod }) => {
 
     return (
         <>
             <section>
                 <div className="detail">
-                    <img src={producto.img} />
-                    <h1>{producto.name}</h1>
+                    <img src={prod.img}></img>
+                    <h2>{prod.name}</h2>
                     <div>
-                        <p>${producto.price}</p>
+                        <p>${prod.price}</p>
                     </div>
                 </div>
             </section>

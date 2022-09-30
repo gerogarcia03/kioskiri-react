@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Item/item.css'
 
 const ItemProds = ({ stock }) => {
@@ -7,12 +8,14 @@ const ItemProds = ({ stock }) => {
     <>
       <section>
         <div className='card'>
-          <img src={stock.img}></img>
-          <h2>{stock.name}</h2>
-          <p>${stock.price}</p>
-          <button>
-            <img className="cart" src='../Assets/carrito.jpg' ></img>
-          </button>
+          <Link to={'/Producto/${producto.id}'}>
+            <img src={stock.img}></img>
+            <h2>{stock.name}</h2>
+            <p>${stock.price}</p>
+            <button>
+              <img className="cart" src='../Assets/carrito.jpg' ></img>
+            </button>
+          </Link>
         </div>
       </section>
     </>

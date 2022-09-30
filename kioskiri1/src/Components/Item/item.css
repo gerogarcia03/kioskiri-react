@@ -5,6 +5,7 @@
 
 .card {
     display: flex;
+    text-align: center;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +22,10 @@
     text-align: center;
 }
 
+.card a{
+    text-decoration: none;
+    color: black;
+}
 .card img {
     padding: 1rem;
     width: 9rem;
