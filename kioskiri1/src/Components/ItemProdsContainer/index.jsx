@@ -8,15 +8,29 @@ import { useParams } from 'react-router-dom';
 
 export const Productos = () => {
 
-    let { CategoriaId } = useParams();
+    const { CategoriaId } = useParams();
     console.log( CategoriaId ) 
 
     const [listaProd, setLista] = useState([]);
 
     useEffect(() => {
-        fetch(product)
-            .then(res=> setLista(res))
-    }, [])
+        
+
+        const fetch = new Promise((resolve, reject) => {
+
+            setTimeout(() => {
+                resolve(product)
+            }, 1000)
+    
+        });
+
+        if(CategoriaId){
+            fetch.then(res => setLista(res.filter(product => product.categoria === CategoriaId)));
+
+        }else{
+            fetch.then(res => setLista(res))
+        }
+    }, [CategoriaId])
 
     return (
         <>
