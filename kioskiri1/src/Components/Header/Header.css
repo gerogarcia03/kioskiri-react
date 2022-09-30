@@ -15,19 +15,35 @@ header .logo{
     margin: 1rem 2rem;
 }
 
-header nav{
+.lista{
     display: flex;
     flex-direction: row;
     margin: 2rem;
 }
 
-header nav li{
+.lista li{
     list-style: none;
     margin: 2rem;
 }
 
-header nav li a{
+.lista li a{
     color: black;
     font-weight: 700;
     text-decoration: none;
+}
+
+.lista li:hover{
+    background-color:rgb(220, 207, 188);
+}
+
+.lista li .dropdown{
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    background-color: antiquewhite;
+}
+
+.lista li:hover .dropdown{
+    display: block;
 }

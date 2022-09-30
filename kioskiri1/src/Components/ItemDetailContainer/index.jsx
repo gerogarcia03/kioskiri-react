@@ -1,24 +1,24 @@
-// import React, { useEffect, useState } from "react";
-// import { ItemDetail } from "../ItemDetail";
-// import { product } from "../utils/product";
-// import { fetch } from "../utils/fetch";
+import React, { useEffect, useState } from "react";
+import { ItemDetail } from "../ItemDetail";
+import { product } from "../utils/product";
+import { fetch } from "../utils/fetch";
 
-// const ItemDetailContainer = ({ greeting }) => {
+const ItemDetailContainer = ({ greeting }) => {
 
-//     const [prod, setProd] = useState({});
+    const [prod, setProd] = useState({});
 
-//     useEffect(() => {
-//         fetch(product)
-//             .then(res => setProd(res))
-//     }, [])
+    useEffect(() => {
+        fetch(product)
+            .then(res => setProd(res))
+    }, [])
 
-//     return (
-//         <>
-//             <h1>{greeting}</h1>
-//             <ItemDetail producto={prod} />
-//         </>
-//     )
+    return (
+        <>
+            <h1>{greeting}</h1>
+            <ItemDetail producto={prod} />
+        </>
+    )
 
-// }
+}
 
-// export default ItemDetailContainer
+export default ItemDetailContainer

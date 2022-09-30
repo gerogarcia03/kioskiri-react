@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import '../../Body.css'
 import ItemCount from "../ItemCount";
 import { ItemList } from "../ItemList"
-import { fetch } from "../utils/fetch";
-import { stock } from "../utils/stock";
+// import { fetch } from "../utils/fetch";
+import { product } from '../utils/product';
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -11,8 +11,8 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
 
-    let { CategoriaId } = useParams();
-    console.log(CategoriaId);
+    const { CategoriaId } = useParams();
+    console.log( CategoriaId );
  
     const onAdd = (cantidad) => {
         alert(`Agregó al carrito ${cantidad} productos`);
@@ -21,9 +21,21 @@ const ItemListContainer = () => {
     const [lista, setLista] = useState([]);
 
     useEffect(() => {
-        fetch(stock)
-            .then(res => setLista(res))
-    }, [])
+        const fetch = new Promise((resolve, reject) => {
+
+            setTimeout(() => {
+                resolve(product)
+            }, 1000)
+    
+        });
+
+        if(CategoriaId){
+            fetch.then(res => setLista(res.filter(product => product.categoria === CategoriaId)));
+
+        }else{
+            fetch.then(res => setLista(res))
+        }
+    }, [CategoriaId])
 
     return (
         <>
