@@ -14,7 +14,7 @@
     box-shadow: 31px 31px 62px rgb(168, 144, 116),
         -31px -31px 62px rgb(197, 177, 151);
     width: 15rem;
-    height: 18rem;
+    height: fit-content;
     margin: 0rem 2rem;
 }
 
@@ -47,6 +47,6 @@
 }
 
 .card .cart {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
 }

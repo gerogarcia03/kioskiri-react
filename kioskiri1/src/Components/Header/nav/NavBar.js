@@ -15,7 +15,7 @@ const NavBar = ({ greeting }) => {
             <nav>
                 <ul className='lista'>
                     <li>
-                        <Link to='/menu/productos'> PRODUCTOS</Link>
+                        <p> <strong>PRODUCTOS</strong></p>
                         <ul className='dropdown'>
                             <li><Link to='/Categoria/Bebidas'>Bebidas</Link></li>
                             <li><Link to='/Categoria/Galletitas'>Galletitas</Link></li>

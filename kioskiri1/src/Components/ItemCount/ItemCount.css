@@ -33,6 +33,23 @@ section {
     width: 10rem;
 }
 
+.prod .add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1rem solid black;
+}
+
+.prod .add div {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid black;
+    border-radius: 3rem;    
+}
+
 .prod .add button {
     text-align: center;
     background-color: transparent;
@@ -40,21 +57,16 @@ section {
 }
 
 .prod .add button:hover {
-    background-color: rgb(185, 170, 151);;
     cursor: pointer;
 }
 
-.prod .add button .cart {
-    width: 2rem;
+.prod .add button img {
+    width: 3rem;
+    border-radius: 0;
+    border: 0;
     margin: 1rem;
 }
 
-.prod .add {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .prod .add h2{
     padding: 1rem;

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { ItemDetail } from "../ItemDetail";
 import { product } from "../utils/product";
 import { useParams } from "react-router-dom";
+import ItemCount from "../ItemCount";
 
 const ItemDetailContainer = () => {
 
-    const [prod, setProd] = useState({});
-    
+    const [prod, setProd] = useState([]);
     const { DetalleId } = useParams();
     
     useEffect(() => {
@@ -17,8 +17,10 @@ const ItemDetailContainer = () => {
             }, 1000)
     
         });
-            fetch.then(res => setProd(res.filter(producto => producto.id === parseInt(DetalleId))));
+            fetch.then(res => setProd(res.find(prod => prod.id === parseInt(DetalleId))));
     }, [])
+
+    
 
     return (
         <>
