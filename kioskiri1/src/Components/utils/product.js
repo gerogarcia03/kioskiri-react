@@ -1,6 +1,6 @@
 export const product = [
 
-    { ìd: 1, name: "Coca-Cola 500", price: "70", cantidad: "1", img: "/Assets/coca500.jpg", categoria: "Bebidas" },
+    { id: 1, name: "Coca-Cola 500", price: "70", cantidad: "1", img: "/Assets/coca500.jpg", categoria: "Bebidas" },
     { id: 2, name: "Pepsi 1lt", price: 120, cantidad: 1, img: "/Assets/pepsi1lt.jpg", categoria: "Bebidas" },
     { id: 3, name: "6 Pack Coca-Cola", price: 450, cantidad: 1, img: "/Assets/6packcoca1lt.jpg", categoria: "Bebidas" },
     { id: 4, name: "6 Pack Pepsi 1lt", price: 420, cantidad: 1, img: "/Assets/pepsi6pack.jpg", categoria: "Bebidas" },

@@ -19,10 +19,9 @@ const Item = ({ producto }) => {
                         <img src={producto.img}></img>
                         <h2>{producto.name}</h2>
                         <p>${producto.price}</p>
-                        <button Link to={'/cart'}>
+                        <button to={'/cart'}>
                             <img className="cart" src="../Assets/carrito.jpg"></img>
                         </button>
-
                     </Link>
                 </div>
             </section>
