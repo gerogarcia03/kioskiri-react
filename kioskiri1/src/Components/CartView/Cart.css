@@ -1,0 +1,23 @@
+
+.cartView img {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    width: 18rem;
+}
+
+.cartView .Card {
+    width: 35%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.cartView .Card button{
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+}

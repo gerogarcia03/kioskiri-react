@@ -27,7 +27,7 @@ const CartContext = ({ children }) => {
     console.log(`cart : `, cartProd)
 
     //--------
-    const ProdEnCart = (id) => cartProd.find(product => product.id === id) ? true : false;
+    const prodEnCart = (id) => cartProd.find(product => product.id === id) ? true : false;
 
     //------------
     const eliminarProd = (id) => {
@@ -37,13 +37,25 @@ const CartContext = ({ children }) => {
         setCartProd(filter)
     };
 
+    //------
+    const precioTotal = () => {
+        return cartProd.reduce((acc, prod) => acc + prod.cantidad * prod.price, 0)
+    }
+
+    //-----
+    const prodTotales = () => {
+        cartProd.find((acc, ActualProd) => acc+ ActualProd.cantidad, 0 )
+    }
+
 
     return (
         <Context.Provider value={{
             addProd,
             eliminarProd,
-            ProdEnCart,
+            prodEnCart,
             limpiarCart,
+            precioTotal,
+            cartProd
         }}>
             {children}
         </Context.Provider>
