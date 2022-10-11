@@ -1,7 +1,6 @@
-import * as firebase from 'firebase/app'
 import { initializeApp } from "firebase/app";
-import { getFirestore } from 'firebase/firestore';
-
+import { getFirestore } from "firebase/firestore"
+ 
 const firebaseConfig = {
   apiKey: "AIzaSyBJfVp8eV_FJKrO3_RmaxHU1wNEudhCa04",
   authDomain: "kioskiri-e07d0.firebaseapp.com",
@@ -13,9 +12,5 @@ const firebaseConfig = {
   measurementId: "G-F4PTY2VV7J"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-const db = getFirestore(app);
-
-export default db;
+export const db = getFirestore(app)

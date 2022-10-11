@@ -15,7 +15,7 @@ const ItemDetail = ({ prod }) => {
     const onAdd = (cantidad, id) => {
         setCart(true);
         addProd(prod, cantidad);
-        alert(`Agregó al carrito ${cantidad} productos`);
+        alert(`Agregó al carrito ${cantidad} ${prod.name}`);
     };
 
     const result = useContext(CartContext);
@@ -25,7 +25,7 @@ const ItemDetail = ({ prod }) => {
         <>
             <section>
                 <div className="detail">
-                    <img src={prod.img}></img>
+                    <img alt='' src={prod.img}></img>
                     <div>
                         <h2>{prod.name}</h2>
                         <h2>${prod.price}</h2>

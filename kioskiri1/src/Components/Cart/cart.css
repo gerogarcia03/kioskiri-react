@@ -1,0 +1,18 @@
+.cartV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartV div{
+    display: flex;
+    flex-direction: column;    
+}
+
+.cartV div button{
+    width: 8rem;
+    margin: 1rem;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+}
+

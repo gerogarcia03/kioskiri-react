@@ -1,36 +1,32 @@
 import React, { useState } from "react";
 import '../../Body.css'
 import { ItemList } from "../ItemList"
-import { product } from '../utils/product';
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { db } from '../../firebase/Firebase';
+import { getDocs, collection, query, where } from 'firebase/firestore';
 
 
 
 const ItemListContainer = () => {
-
     const { CategoriaId } = useParams();
-
-    const onAdd = (cantidad) => {
-        alert(`Agregó al carrito ${cantidad} productos`);
-    }
-    const [lista, setLista] = useState([]);
-    useEffect(() => {
-        const fetch = new Promise((resolve, reject) => {
-
-            setTimeout(() => {
-                resolve(product)
-            }, 1000)
     
-        });
+    const [lista, setLista] = useState([]);
 
-        if(CategoriaId){
-            fetch.then(res => setLista(res.filter(product => product.categoria === CategoriaId)));
+    useEffect(() => {
+        const ProdCollection = collection(db, 'stock');
 
-        }else{
-            fetch.then(res => setLista(res))
+        if (CategoriaId) {
+            const q = query(ProdCollection, where('categoria', '==', CategoriaId))
+            getDocs(q)
+                .then(res=> setLista(res.docs.map(producto => ({id:producto.id, ...producto.data() }))))
+
+        } else {
+            getDocs(ProdCollection)
+                .then(res=> setLista(res.docs.map(producto => ({id:producto.id, ...producto.data() }))))
         }
     }, [CategoriaId])
+
 
     return (
         <>
