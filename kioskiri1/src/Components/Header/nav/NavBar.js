@@ -1,7 +1,7 @@
 import React from 'react';
 import CartIcon from './CartWidget';
 import '../../Header/Header.css';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = ({ greeting }) => {

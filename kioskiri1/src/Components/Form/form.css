@@ -1,0 +1,48 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form h2{
+    margin: 2rem;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: antiquewhite;
+    width: 40%;
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.form form h2{
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form form div input{
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    background-color: rgb(197, 177, 151);
+    
+    width: 22rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+
+.form form div button{
+    display: flex;
+    justify-content: center;
+
+    width: 5rem;
+    margin: 1rem;
+}
