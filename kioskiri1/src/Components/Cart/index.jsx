@@ -28,11 +28,12 @@ const Cart = () => {
             fecha: serverTimestamp(),
         },
         )
-        .then(result => {
-            console.log(result.id)
+            .then(result => {
+                console.log(result.id)
             })
-            console.log()
-        }
+        alert('Ha finalizado su compra con éxito!')
+        limpiarCart()
+    }
 
 
 
@@ -59,9 +60,11 @@ const Cart = () => {
                         Vaciar Carrito
                     </button>
                     <div>
-                        <button onClick={asd}>
-                            Finalizar Compra
-                        </button>
+                        <Link to='/Menu/miCuenta'>
+                            <button onClick={asd}>
+                                Finalizar Compra
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

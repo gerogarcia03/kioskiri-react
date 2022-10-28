@@ -27,7 +27,7 @@ const Form = () => {
         )
         .then(result => {
             console.log(result.id)
-            console.log(asd.docs)
+            console.log(cliente)
             })
         }
 
