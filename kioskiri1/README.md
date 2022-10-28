@@ -7,8 +7,8 @@ Yo soy Gerónimo García Merlo y estoy desarrollando este proyecto web para un k
 El objetivo principal es realizar un e-commerce enfocado para el curso de `React.js` de CoderHouse.
 
 ## Para iniciar el proyecto
-`1-` Ejecute la terminal. (CMD)
-    `a-` npm start.
+`1-` Ejecute la terminal. (CMD).
+ `a-`npm start.
     Este comando ejecuta la app en modo desarrollador. Abre en su navegador preferido http://localhost:3000.
 
 ##
