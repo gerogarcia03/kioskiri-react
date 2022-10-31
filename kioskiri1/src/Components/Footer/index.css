@@ -1,0 +1,49 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: antiquewhite;
+}
+
+footer .footer{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+footer h4{
+    font-size: 1.4rem;
+}
+
+footer img{
+    margin-top: 0.3rem;
+    width: 2.3rem;
+    height: 1.5rem;
+}
+
+footer .bases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .bases h2{
+    font-size: 1.5rem;
+}
+
+footer .bases .logo{
+    width: 12rem;
+    height: fit-content;
+}
+
+footer .footerList ul li a{
+    text-decoration: none;
+    color: black;
+}

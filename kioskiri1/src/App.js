@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './Components/Header/nav/NavBar';
+import { Footer } from './Components/Footer';
 import ItemListContainer from './Components/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -26,6 +27,7 @@ export const App = () => {
             <Route path='/Menu/Cart' element={<Cart />} />
             <Route path='/Menu/miCuenta' element={< Form/>}></Route>
           </Routes>
+          <Footer/>
         </BrowserRouter>
         </CartContext>
     </>

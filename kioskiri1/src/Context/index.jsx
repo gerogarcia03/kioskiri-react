@@ -1,5 +1,4 @@
 import React, { createContext, useState, useContext } from 'react'
-import { product } from '../Components/utils/product';
 
 export const Context = createContext([]);
 
@@ -43,9 +42,6 @@ const CartContext = ({ children }) => {
     }
 
     //-----
-    const prodTotales = () => {
-        cartProd.find((acc, ActualProd) => acc+ ActualProd.cantidad, 0 )
-    }
 
 
     return (

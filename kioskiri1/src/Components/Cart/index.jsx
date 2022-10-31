@@ -6,6 +6,7 @@ import Form from '../Form';
 import { Link } from 'react-router-dom';
 import { db } from '../../firebase/Firebase';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+import Swal from 'sweetalert2';
 
 
 const Cart = () => {
@@ -30,8 +31,12 @@ const Cart = () => {
         )
             .then(result => {
                 console.log(result.id)
+                Swal.fire({
+                    title: 'Gracias por tu compra!',
+                    text: `Tu id de compra es ${result.id}`,
+                    icon: 'success',
+                })
             })
-        alert('Ha finalizado su compra con éxito!')
         limpiarCart()
     }
 
@@ -42,7 +47,10 @@ const Cart = () => {
         return (
             <>
                 <div className='cartV'>
-                    <p>No hay productos en el carrito</p>
+                    <p>No hay productos en el carrito.</p>
+                    <Link to='/'>
+                        Ir a comprar
+                    </Link>
                 </div>
             </>
         );
@@ -60,11 +68,9 @@ const Cart = () => {
                         Vaciar Carrito
                     </button>
                     <div>
-                        <Link to='/Menu/miCuenta'>
-                            <button onClick={asd}>
-                                Finalizar Compra
-                            </button>
-                        </Link>
+                        <button onClick={asd}>
+                            Finalizar Compra
+                        </button>
                     </div>
                 </div>
             </div>
