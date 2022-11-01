@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kioskiri-react/static/css/main.5c70d089.css",
-    "main.js": "/kioskiri-react/static/js/main.09fb867a.js",
+    "main.css": "/kioskiri-react/static/css/main.e56d9a52.css",
+    "main.js": "/kioskiri-react/static/js/main.a131797b.js",
     "static/js/787.6f2d9f29.chunk.js": "/kioskiri-react/static/js/787.6f2d9f29.chunk.js",
     "index.html": "/kioskiri-react/index.html",
-    "main.5c70d089.css.map": "/kioskiri-react/static/css/main.5c70d089.css.map",
-    "main.09fb867a.js.map": "/kioskiri-react/static/js/main.09fb867a.js.map",
+    "main.e56d9a52.css.map": "/kioskiri-react/static/css/main.e56d9a52.css.map",
+    "main.a131797b.js.map": "/kioskiri-react/static/js/main.a131797b.js.map",
     "787.6f2d9f29.chunk.js.map": "/kioskiri-react/static/js/787.6f2d9f29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c70d089.css",
-    "static/js/main.09fb867a.js"
+    "static/css/main.e56d9a52.css",
+    "static/js/main.a131797b.js"
   ]
 }
