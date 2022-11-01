@@ -14,7 +14,7 @@ const Item = ({ producto }) => {
                         <h2>{producto.name}</h2>
                         <p>${producto.price}</p>
                         <button>
-                            <img className="cart" alt="cart" src="../Assets/carrito.jpg"></img>
+                            <img className="cart" alt="cart" src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265085/carrito_racyor.png"></img>
                         </button>
                     </Link>
                 </div>

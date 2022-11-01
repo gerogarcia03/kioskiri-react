@@ -9,7 +9,7 @@ const NavBar = ({ greeting }) => {
     return (
         <header>
             <Link to='/'>
-                <img className='logo' src={'../Assets/Kioskiri-Logo-2.png'} alt='logo'></img>
+                <img className='logo' src='https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265086/Kioskiri-Logo-2_fqrxhn.png' alt='logo'></img>
             </Link>
             <h1>{greeting}</h1>
             <nav>

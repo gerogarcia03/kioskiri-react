@@ -26,7 +26,7 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
                     <div className="add">
                         <p>Stock Disponible: {stock}</p>
                         <button disabled={stock <= 0} onClick={() => onAdd(count)}>
-                            <img className="cart" src="../Assets/carrito.jpg"></img>
+                            <img className="cart" src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265085/carrito_racyor.png"></img>
                         </button>
                         <div>
                             <button disabled={count >= stock} onClick={addProd}>
