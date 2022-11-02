@@ -11,10 +11,8 @@ header h1 {
 }
 
 header .logo{
-    position: absolute;
-    width: 40rem;
-    bottom: 52.4rem;
-    right: 103rem;
+    width: 35rem;
+    margin-left: -5rem;
 }
 
 .lista{
