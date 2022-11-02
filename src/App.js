@@ -21,11 +21,11 @@ export const App = () => {
         <BrowserRouter>
           <NavBar greeting={mensaje} />
           <Routes>
-            <Route path='/' element={<ItemListContainer />} />
+            <Route exact path='/' element={<ItemListContainer />} />
             <Route path='/Categoria/:CategoriaId' element={<ItemListContainer />} />
             <Route path='/Detalle/:DetalleId' element={<ItemDetailContainer />} />
-            <Route path='/Menu/Cart' element={<Cart />} />
-            <Route path='/Menu/miCuenta' element={< Form/>}></Route>
+            <Route exact path='/Menu/Cart' element={<Cart />} />
+            <Route exact path='/Menu/miCuenta' element={< Form/>}></Route>
           </Routes>
           <Footer/>
         </BrowserRouter>
