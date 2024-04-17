@@ -10,7 +10,7 @@ const CartView = ({ prod }) => {
         <>
             <section className='cartView'>
                 <div className='Card'>
-                    <img src={prod.img}></img>
+                    <img src={prod.img} alt=''></img>
                     <div>
                         <h2>{prod.name}</h2>
                         <h2>${prod.price}</h2>

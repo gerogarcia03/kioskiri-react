@@ -11,11 +11,10 @@ const NavBar = ({ greeting }) => {
             <Link to='/'>
                 <img className='logo' src='https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265086/Kioskiri-Logo-2_fqrxhn.png' alt='logo'></img>
             </Link>
-            <h1>{greeting}</h1>
             <nav>
                 <ul className='lista'>
                     <li>
-                        <p> <strong>PRODUCTOS</strong></p>
+                        <p><Link to='../'><strong>PRODUCTOS</strong></Link></p>
                         <ul className='dropdown'>
                             <li><Link to='/Categoria/Bebidas'>Bebidas</Link></li>
                             <li><Link to='/Categoria/Galletitas'>Galletitas</Link></li>

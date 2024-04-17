@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../ItemCount/ItemCount.css';
-import { useCartContext } from "../../Context";
 
 
 const ItemCount = ({ inicial, stock, onAdd }) => {
@@ -21,12 +20,12 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
 
     return (
         <>
-            <section>
+            <section className="itemCount">
                 <div className="prod">
                     <div className="add">
                         <p>Stock Disponible: {stock}</p>
                         <button disabled={stock <= 0} onClick={() => onAdd(count)}>
-                            <img className="cart" src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265085/carrito_racyor.png"></img>
+                            <img alt="" className="cart" src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265085/carrito_racyor.png"></img>
                         </button>
                         <div>
                             <button disabled={count >= stock} onClick={addProd}>

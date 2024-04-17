@@ -1,19 +1,21 @@
+.cartVacio{
+    display: flex;
+    margin: 14rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .cartV{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-}
-
-.cartV div{
-    display: flex;
-    flex-direction: column;    
+    margin: 3rem;
 }
 
 .cartV div button{
     width: 8rem;
-    margin: 1rem;
-    background-color: antiquewhite;
-    border-radius: 1rem;
+    margin: 0.5rem;
+    background-color: #ffbd43;
+    border-radius: 0.5rem;
 }
 

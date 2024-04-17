@@ -4,17 +4,12 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-
-    margin-top: 3rem;
-    padding-bottom: 2rem;
-    background-color: antiquewhite;
-}
-
-footer .footer{
-    text-align: center;
+    padding-bottom: 3rem;
     padding-top: 2rem;
+    background-color: #ffbd43;
+    text-align: center;
 }
+
 
 footer h4{
     font-size: 1.4rem;
@@ -31,7 +26,7 @@ footer .bases{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin-top: 1rem;
 }
 
 footer .bases h2{

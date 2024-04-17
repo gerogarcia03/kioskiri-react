@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import './form.css'
 import { useCartContext } from '../../Context';
 import { db } from '../../firebase/Firebase';
@@ -46,13 +45,8 @@ const Form = () => {
                     <div>
                         <input type='telefono' placeholder='Teléfono' ></input>
                     </div>
-                    <div>
-                        <input type='direccion' placeholder='' ></input>
-                    </div>
-                </form>
-                <div>
                     <button onClick={asd}>Enviar</button>
-                </div>
+                </form>
             </div>
         </>
     )

@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='footer'>
                     <h4>Redes Sociales</h4>
                     <a href="https://www.instagram.com/kioskiri/?hl=es"><img src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265087/logoinsta_advgwv.png" alt="logo instagram" /></a>
-                    <a href=""><img src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265088/twitterlogo_c2eveq.png" alt="logo twitter" /></a>
+                    <a href="/"><img src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667265088/twitterlogo_c2eveq.png" alt="logo twitter"/></a>
                     <div className='bases'>
                         <h2>Bases y Condiciones</h2>
                         <p>Al acceder o usar la página web de nuestro servicio, usted aprueba que haya leído, entendido y aceptado

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../../Body.css'
+import './index.css'
 import { ItemList } from "../ItemList"
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -13,7 +13,7 @@ const ItemListContainer = () => {
 
     const [lista, setLista] = useState([]);
 
-    const [loading, setLoading] = useState(true) 
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         const ProdCollection = collection(db, 'stock');
@@ -21,31 +21,34 @@ const ItemListContainer = () => {
         if (CategoriaId) {
             const q = query(ProdCollection, where('categoria', '==', CategoriaId))
             getDocs(q)
-                .then(res => {setLista(res.docs.map(producto => ({ id: producto.id, ...producto.data() })));
-            setLoading(false)})
+                .then(res => {
+                    setLista(res.docs.map(producto => ({ id: producto.id, ...producto.data() })));
+                    setLoading(false)
+                })
 
         } else {
             getDocs(ProdCollection)
-                .then(res => {setLista(res.docs.map(producto => ({ id: producto.id, ...producto.data() })));
-            setLoading(false)})
+                .then(res => {
+                    setLista(res.docs.map(producto => ({ id: producto.id, ...producto.data() })));
+                    setLoading(false)
+                })
         }
     }, [CategoriaId])
 
 
     return (
         <>
-            <section>
-                {loading ? (
-                    <div>
-                        <div>
-                            <img src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667267681/ezgif.com-gif-maker_utaz0x.gif"></img>
-                        </div>
-                    </div>
-                )
-                    : (
+            <h1> ¡Bienvenidos a Kioskiri!</h1>
+            {loading ? (
+                <div className="divSpinner">
+                    <img className="spinner" alt="" src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667267681/ezgif.com-gif-maker_utaz0x.gif"></img>
+                </div>
+            )
+                : (
+                    <section className="itemListContainer">
                         <ItemList lista={lista} />
-                    )}
-            </section>
+                    </section>
+                )}
         </>
     )
 }

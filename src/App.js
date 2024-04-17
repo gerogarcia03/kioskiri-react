@@ -20,9 +20,9 @@ export const App = () => {
     <>
       <CartContext >
         <BrowserRouter>
-          <NavBar greeting={mensaje} />
+          <NavBar/>
           <Routes>
-            <Route exact path='/' element={<ItemListContainer />} />
+            <Route exact path='/' element={<ItemListContainer />} greeting={mensaje} />
             <Route path='/Categoria/:CategoriaId' element={<ItemListContainer />} />
             <Route path='/Detalle/:DetalleId' element={<ItemDetailContainer />} />
             <Route exact path='/Menu/Cart' element={<Cart />} />

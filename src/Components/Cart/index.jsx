@@ -2,7 +2,6 @@ import React from 'react';
 import { useCartContext } from '../../Context';
 import CartView from '../CartView';
 import './cart.css'
-import Form from '../Form';
 import { Link } from 'react-router-dom';
 import { db } from '../../firebase/Firebase';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
@@ -46,7 +45,7 @@ const Cart = () => {
     if (cartProd.length === 0) {
         return (
             <>
-                <div className='cartV'>
+                <div className='cartVacio'>
                     <p>No hay productos en el carrito.</p>
                     <Link to='/'>
                         Ir a comprar
