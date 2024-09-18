@@ -4,10 +4,12 @@ import { Footer } from './Components/Footer';
 import ItemListContainer from './Components/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { CartContext } from './Context';
+import { CartContext } from './Context/cartContext.jsx';
 import Error  from './Components/ErrorPage'
 import Cart from './Components/Cart';
-import Form from './Components/Form';
+import SignIn from './Components/SignIn';
+import SignUp from './Components/SignUp';
+import MiCuenta from './Components/MiCuenta/index.jsx';
 
 
 
@@ -26,7 +28,9 @@ export const App = () => {
             <Route path='/Categoria/:CategoriaId' element={<ItemListContainer />} />
             <Route path='/Detalle/:DetalleId' element={<ItemDetailContainer />} />
             <Route exact path='/Menu/Cart' element={<Cart />} />
-            <Route exact path='/Menu/miCuenta' element={< Form/>}></Route>
+            <Route exact path='/Menu/SignIn' element={<SignIn/>}></Route>
+            <Route exact path='/Menu/SignUp' element={<SignUp/>}></Route>
+            <Route exact path ='/MiCuenta' element={<MiCuenta/>}></Route>
             <Route path='*' element={< Error />}></Route>
           </Routes>
           <Footer/>

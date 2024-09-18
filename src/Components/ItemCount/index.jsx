@@ -4,7 +4,6 @@ import '../ItemCount/ItemCount.css';
 
 const ItemCount = ({ inicial, stock, onAdd }) => {
 
-
     const [count, setStock] = useState(inicial);
 
     const addProd = () => {

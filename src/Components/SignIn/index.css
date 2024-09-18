@@ -1,9 +1,17 @@
+.userRegistrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
 .form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4rem;
+    margin: 5rem;
+    height: 40vh;
 }
 
 .form h2{
@@ -30,8 +38,11 @@
 }
 
 .form form div input{
-    border: 0.1rem solid black;
-    border-radius: 0.3rem;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffbd43;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
     width: 22rem;
     height: 1.5rem;
     margin: 0.5rem;
@@ -39,8 +50,18 @@
 }
 
 .form form button{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
     display: flex;
     justify-content: center;
-    width: 5rem;
+    width: 22rem;
     margin: 1rem;
+    padding: 3px;
+    border: 0px solid black;
+    border-radius: 1rem;
+}
+
+.form h5{
+    margin-bottom: 1rem;
+    font-weight: 400;
 }

@@ -4,19 +4,18 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 3rem;
-    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     background-color: #ffbd43;
     text-align: center;
 }
 
 
 footer h4{
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 footer img{
-    margin-top: 0.3rem;
     width: 2.3rem;
     height: 1.5rem;
 }
@@ -29,16 +28,17 @@ footer .bases{
     margin-top: 1rem;
 }
 
-footer .bases h2{
-    font-size: 1.5rem;
+footer .bases p{
+    font-size: 0.8rem;
 }
 
 footer .bases .logo{
-    width: 12rem;
+    width: 10rem;
     height: fit-content;
 }
 
 footer .footerList ul li a{
+    font-size: 0.8rem;
     text-decoration: none;
     color: black;
 }
