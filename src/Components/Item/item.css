@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     height: fit-content; 
+    margin: 2rem 0rem;
 }
 
 .card h2 {
@@ -16,8 +17,7 @@
 }
 
 .card img {
-    border-bottom: 1px solid black;
-    height: 11rem;
+    height: 14rem;
     width: fit-content;
 }
 

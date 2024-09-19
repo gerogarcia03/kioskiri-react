@@ -19,7 +19,7 @@ header .logo{
 .lista{
     display: flex;
     align-items: center;
-    margin:3rem;
+    margin:3rem 9rem;
 }
 
 .lista li{

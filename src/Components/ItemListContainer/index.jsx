@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { db } from '../../firebase/Firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore';
+import image from '../img/kioskiri.jpg'
 
 
 
@@ -38,7 +39,22 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <h1> ¡Bienvenidos a Kioskiri!</h1>
+
+
+            <section className="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src={image} alt="frente Kioskiri"></img>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>¡Bienvenidos a Kioskiri!</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
             {loading ? (
                 <div className="divSpinner">
                     <img className="spinner" alt="" src="https://res.cloudinary.com/dpkvx3lfj/image/upload/v1667267681/ezgif.com-gif-maker_utaz0x.gif"></img>
